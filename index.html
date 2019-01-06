@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Word Guessing Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="game.js"></script>
-</head>
-<body>
-<div id="cityBox">
 
-</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Word Guess Game</title>
+
+	<!-- bootstrap lib -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+	<div class="container text-center">
+		<!-- Content here -->
+		<header id="main-header">
+			<h1>Word Guess Game</h1>
+			<p class="inst">Press any key to get started!</p>
+            <div id="word-blanks"></div>
+            <div id="guesses-wrong-display"></div>
+
+			<!-- Game win/loss feedback -->
+			<div id="game-won" class="hide">You won!</div>
+			<div id="game-lose" class="hide">You lose!</div>
+
+		</header>
+    <div class="row">
+      <div class="col-sm-6">
+
+        <!-- <p id="guesses-left">3</p> -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Guesses Left</h5>
+            <p class="card-text" id="guesses-left">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Guesses Wrong</h5>
+            <p class="card-text" id="guesses-wrong">0</p>
+          </div>
+        </div>       
+      </div>
+    </div>
+	</div>
+
+
+	<script src="script.js">
+
+	</script>
 </body>
+
 </html>
